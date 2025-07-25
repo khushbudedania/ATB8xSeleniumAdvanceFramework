@@ -14,16 +14,13 @@ public class DashboardPage_POM extends CommonToAllPage {
     }
 
     //page Locators
-    By usernameonDashboard = By.xpath("//span[@data-qa='lufexuloga']");
+    By usernameonDashboard = By.xpath("//span[text()= \"khushbu zalavadiya\"]");
 
     //page Action
     public String loggedInUserName()
     {
-        driver.findElement(usernameonDashboard);
-
-
         //presenceOfElement(usernameonDashboard);
-        return getElement(usernameonDashboard).getText();
+        return driver.findElement(usernameonDashboard).getText();
     }
 
 
