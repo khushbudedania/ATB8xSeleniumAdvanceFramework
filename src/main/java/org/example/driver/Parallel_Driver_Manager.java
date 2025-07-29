@@ -24,8 +24,8 @@ public class Parallel_Driver_Manager {
 
             if (browser.equalsIgnoreCase("chrome")) {
                 driver = new ChromeDriver();  // Add ChromeOptions as needed
-            } else if (browser.equalsIgnoreCase("firefox")) {
-                driver = new FirefoxDriver();  // Add FirefoxOptions as needed
+            } else if (browser.equalsIgnoreCase("Edge")) {
+                driver = new EdgeDriver();  // Add FirefoxOptions as needed
             }
 
             threadLocal.set(driver);
