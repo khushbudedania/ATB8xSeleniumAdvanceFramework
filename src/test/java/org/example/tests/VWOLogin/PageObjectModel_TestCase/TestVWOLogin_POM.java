@@ -55,8 +55,11 @@ public class TestVWOLogin_POM extends Parallel_BaseTest {
         assertThat(loggedInUserName).isNotBlank().isNotNull().isNotEmpty();
         Assert.assertEquals(loggedInUserName,PropertiesReader.readkey("expected_username"));
 
-
     }
 }
 // if you have use before method then two browser window open for two tc.
 //if you have use before test then one browser window open for two tc.
+
+// mvn clean test  '-Dsurefire.suiteXmlFiles=testngTestVWOLoginPOMparrallel.xml'
+//these above command is used to run testcase in terminal.
+
